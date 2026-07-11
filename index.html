@@ -422,7 +422,7 @@
             <div class="docs-card">
                 <h3>2. Initialization</h3>
                 <p>Mount a new instance to a container element and define callback hooks.</p>
-                <pre class="code-block"><code><span class="code-keyword">const</span> editor = <span class="code-keyword">new</span> <span class="code-keyword">DiginixEditor</span>({
+                <pre class="code-block"><code><span class="code-keyword">const</span> editor = <span class="code-keyword">new</span> <span class="code-keyword">SleekEditor</span>({
     container: <span class="code-string">'#editor-mount'</span>,
     initialHTML: <span class="code-string">'&lt;p&gt;Start text...&lt;/p&gt;'</span>,
     onChange: <span class="code-keyword">(html)</span> =&gt; {
@@ -457,9 +457,9 @@
             }
 
             // Init core editor
-            const editor = new DiginixEditor({
+            const editor = new SleekEditor({
                 container: '#editor-api-mount',
-                initialHTML: '<h2>SleekEditor Sandbox</h2><p>This sandbox is running <b>DiginixEditor</b> version 1.0. All events and output content are monitored in the side panel.</p><blockquote>Create custom accordion blocks, links, code tags, or adjust font settings dynamically.</blockquote>',
+                initialHTML: '<h2>SleekEditor Sandbox</h2><p>This sandbox is running <b>SleekEditor</b> version 1.0. All events and output content are monitored in the side panel.</p><blockquote>Create custom accordion blocks, links, code tags, or adjust font settings dynamically.</blockquote>',
                 onChange: (html) => {
                     addLog('ON_CHANGE', `${html.length} characters`);
                     outputText.value = html;

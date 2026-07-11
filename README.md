@@ -21,10 +21,10 @@ You can load the editor directly from a CDN (or your hosted files) without insta
 
 ```html
 <!-- Load CSS from CDN Link -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/your-username/sleek-editor@main/editor.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gohardev260/sleek-editor-api@main/editor.css">
 
 <!-- Load JavaScript from CDN Link -->
-<script src="https://cdn.jsdelivr.net/gh/your-username/sleek-editor@main/editor.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gohardev260/sleek-editor-api@main/editor.js"></script>
 ```
 
 ### Option B: Local Files

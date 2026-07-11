@@ -32,7 +32,7 @@ const DE_ICONS = {
     codeXml: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="4" x2="12" y2="20"/></svg>'
 };
 
-class DiginixEditor {
+class SleekEditor {
     /**
      * Initialize the editor instance
      * @param {Object} options Configuration options
@@ -52,7 +52,7 @@ class DiginixEditor {
             : this.options.container;
 
         if (!this.container) {
-            console.error('DiginixEditor: Container element not found.');
+            console.error('SleekEditor: Container element not found.');
             return;
         }
 
@@ -894,7 +894,7 @@ class DiginixEditor {
 
 // Export module
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = DiginixEditor;
+    module.exports = SleekEditor;
 } else {
-    window.DiginixEditor = DiginixEditor;
+    window.SleekEditor = SleekEditor;
 }
