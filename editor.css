@@ -492,3 +492,108 @@
 .de-choice-btn:hover svg {
     color: var(--de-color-primary);
 }
+
+/* Custom Horizontal Rule Styling */
+.diginix-editor-area hr.diginix-hr {
+    border: none;
+    border-top: 2px solid var(--de-color-border);
+    margin: 20px 0;
+}
+
+/* Special Characters Modal Styling */
+.de-modal-char {
+    max-width: 480px;
+}
+
+.de-char-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--de-color-border);
+    margin-bottom: 14px;
+    gap: 4px;
+}
+
+.de-char-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--de-color-ink-mute);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    outline: none;
+}
+
+.de-char-tab:hover {
+    color: var(--de-color-ink);
+}
+
+.de-char-tab.active {
+    color: var(--de-color-primary);
+    border-bottom-color: var(--de-color-primary);
+}
+
+.de-char-grids-container {
+    min-height: 160px;
+}
+
+.de-char-grid {
+    display: none;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.de-char-grid.active {
+    display: grid;
+}
+
+.de-char-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid var(--de-color-border);
+    border-radius: var(--de-radius-sm);
+    background-color: var(--de-color-bg);
+    color: var(--de-color-ink);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    outline: none;
+}
+
+.de-char-btn:hover {
+    border-color: var(--de-color-primary);
+    background-color: var(--de-color-primary-alpha);
+    transform: scale(1.05);
+}
+
+/* Find and Replace Modal Styling */
+.de-modal-find-replace {
+    max-width: 420px;
+}
+
+.de-modal-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.de-modal-checkbox-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--de-color-ink);
+    user-select: none;
+    cursor: pointer;
+}
+
+.de-find-status {
+    font-size: 12px;
+    color: var(--de-color-primary);
+    min-height: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+

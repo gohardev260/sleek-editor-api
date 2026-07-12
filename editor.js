@@ -18,6 +18,8 @@ const DE_ICONS = {
     alignLeft: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"/><line x1="15" y1="12" x2="3" y2="12"/><line x1="17" y1="18" x2="3" y2="18"/></svg>',
     alignCenter: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"/><line x1="17" y1="12" x2="7" y2="12"/><line x1="19" y1="18" x2="5" y2="18"/></svg>',
     alignRight: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="9" y2="12"/><line x1="21" y1="18" x2="7" y2="18"/></svg>',
+    alignJustify: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="10" x2="3" y2="10"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="21" y1="18" x2="3" y2="18"/></svg>',
+    lineSpacing: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H7"/><path d="M21 6H7"/><path d="M21 14H7"/><path d="M21 18H7"/><path d="M3 20V4"/><path d="M1 7l2-3 2 3"/><path d="M1 17l2 3 2-3"/></svg>',
     list: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>',
     listOrdered: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="6" x2="21" y2="6"/><line x1="10" y1="12" x2="21" y2="12"/><line x1="10" y1="18" x2="21" y2="18"/><path d="M4 6h1v4"/><path d="M4 10h2"/><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>',
     indentDecrease: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 8 3 12 7 16"/><line x1="21" y1="12" x2="11" y2="12"/><line x1="21" y1="6" x2="11" y2="6"/><line x1="21" y1="18" x2="11" y2="18"/></svg>',
@@ -29,6 +31,13 @@ const DE_ICONS = {
     image: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>',
     table: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"/></svg>',
     activity: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
+    horizontalRule: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/></svg>',
+    findReplace: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M21 21l-6-6"/><path d="M15 9h7"/><path d="M19 6l3 3-3 3"/></svg>',
+    changeCase: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l5-15 5 15"/><path d="M6.5 14h6"/><circle cx="18" cy="16" r="3"/><path d="M21 13v7"/></svg>',
+    dateTime: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="16" r="3"/><polyline points="12 15 12 16 13 16"/></svg>',
+    specialCharacters: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h4.5a2.5 2.5 0 0 0 2.5-2.5C10 14 8 11.5 8 8a4 4 0 1 1 8 0c0 3.5-2 6-2 9.5a2.5 2.5 0 0 0 2.5 2.5H21"/></svg>',
+    clearFormatting: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>',
+    print: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
     codeXml: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="4" x2="12" y2="20"/></svg>'
 };
 
@@ -81,6 +90,30 @@ class SleekEditor {
             <button type="button" class="diginix-toolbar-btn" data-cmd="redo" title="Redo (Ctrl+Y)">${DE_ICONS.redo}</button>
             <span class="diginix-editor-toolbar-sep"></span>
 
+            <select class="diginix-toolbar-select" data-select="fontName" title="Font Family" style="width: 110px;">
+                <option value="" disabled selected>Font Family</option>
+                <option value="system-ui, -apple-system, sans-serif">Sans-Serif</option>
+                <option value="SFMono-Regular, Consolas, monospace">Monospace</option>
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+
+            <select class="diginix-toolbar-select" data-select="fontSize" title="Font Size" style="width: 85px;">
+                <option value="" disabled selected>Size</option>
+                <option value="12px">12 px</option>
+                <option value="14px">14 px</option>
+                <option value="16px">16 px</option>
+                <option value="18px">18 px</option>
+                <option value="20px">20 px</option>
+                <option value="24px">24 px</option>
+                <option value="28px">28 px</option>
+                <option value="32px">32 px</option>
+                <option value="48px">48 px</option>
+            </select>
+
             <select class="diginix-toolbar-select" data-select="formatBlock" title="Paragraph Format">
                 <option value="p">Paragraph</option>
                 <option value="h1">Heading 1</option>
@@ -110,6 +143,15 @@ class SleekEditor {
             <button type="button" class="diginix-toolbar-btn" data-cmd="justifyLeft" title="Align Left">${DE_ICONS.alignLeft}</button>
             <button type="button" class="diginix-toolbar-btn" data-cmd="justifyCenter" title="Align Center">${DE_ICONS.alignCenter}</button>
             <button type="button" class="diginix-toolbar-btn" data-cmd="justifyRight" title="Align Right">${DE_ICONS.alignRight}</button>
+            <button type="button" class="diginix-toolbar-btn" data-cmd="justifyFull" title="Justify">${DE_ICONS.alignJustify}</button>
+
+            <select class="diginix-toolbar-select" data-select="lineSpacing" title="Line Spacing" style="width: 70px;">
+                <option value="" disabled selected>Line Spacing</option>
+                <option value="1.0">1.0</option>
+                <option value="1.15">1.15</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+            </select>
             <span class="diginix-editor-toolbar-sep"></span>
 
             <button type="button" class="diginix-toolbar-btn" data-cmd="insertUnorderedList" title="Bullets (Ctrl+Shift+L)">${DE_ICONS.list}</button>
@@ -125,6 +167,22 @@ class SleekEditor {
             <button type="button" class="diginix-toolbar-btn" data-tool="insertImage" title="Image (Ctrl+Shift+I)">${DE_ICONS.image}</button>
             <button type="button" class="diginix-toolbar-btn" data-tool="insertTable" title="Table (Ctrl+Shift+T)">${DE_ICONS.table}</button>
             <button type="button" class="diginix-toolbar-btn" data-tool="insertDiagram" title="ASCII Diagram">${DE_ICONS.activity}</button>
+            <span class="diginix-editor-toolbar-sep"></span>
+
+            <select class="diginix-toolbar-select" data-select="changeCase" title="Change Case" style="width: 105px;">
+                <option value="" disabled selected>Change Case</option>
+                <option value="sentence">Sentence case</option>
+                <option value="lowercase">lowercase</option>
+                <option value="uppercase">UPPERCASE</option>
+                <option value="capitalize">Capitalize Each Word</option>
+            </select>
+
+            <button type="button" class="diginix-toolbar-btn" data-tool="insertHorizontalRule" title="Horizontal Rule">${DE_ICONS.horizontalRule}</button>
+            <button type="button" class="diginix-toolbar-btn" data-tool="openFindReplace" title="Find and Replace (Ctrl+H)">${DE_ICONS.findReplace}</button>
+            <button type="button" class="diginix-toolbar-btn" data-tool="insertDateTime" title="Insert Date & Time">${DE_ICONS.dateTime}</button>
+            <button type="button" class="diginix-toolbar-btn" data-tool="insertSpecialCharacter" title="Special Characters">${DE_ICONS.specialCharacters}</button>
+            <button type="button" class="diginix-toolbar-btn" data-cmd="removeFormat" title="Clear Formatting">${DE_ICONS.clearFormatting}</button>
+            <button type="button" class="diginix-toolbar-btn" data-tool="printDocument" title="Print (Ctrl+P)">${DE_ICONS.print}</button>
             <span class="diginix-editor-toolbar-sep"></span>
 
             <button type="button" class="diginix-toolbar-btn" data-tool="toggleSource" title="Toggle Source Mode">${DE_ICONS.codeXml}</button>
@@ -187,6 +245,46 @@ class SleekEditor {
                 document.execCommand('formatBlock', false, `<${e.target.value}>`);
                 this.editorArea.focus();
                 this._onContentChange();
+            });
+        }
+
+        // Font Family Select
+        const fontNameEl = this.toolbar.querySelector('select[data-select="fontName"]');
+        if (fontNameEl) {
+            fontNameEl.addEventListener('change', (e) => {
+                if (this.isSourceMode) return;
+                this.applySelectionStyle('fontFamily', e.target.value);
+                fontNameEl.value = ""; // Reset label
+            });
+        }
+
+        // Font Size Select
+        const fontSizeEl = this.toolbar.querySelector('select[data-select="fontSize"]');
+        if (fontSizeEl) {
+            fontSizeEl.addEventListener('change', (e) => {
+                if (this.isSourceMode) return;
+                this.applySelectionStyle('fontSize', e.target.value);
+                fontSizeEl.value = ""; // Reset label
+            });
+        }
+
+        // Line Spacing Select
+        const lineSpacingEl = this.toolbar.querySelector('select[data-select="lineSpacing"]');
+        if (lineSpacingEl) {
+            lineSpacingEl.addEventListener('change', (e) => {
+                if (this.isSourceMode) return;
+                this.setLineSpacing(e.target.value);
+                lineSpacingEl.value = ""; // Reset label
+            });
+        }
+
+        // Change Case Select
+        const changeCaseEl = this.toolbar.querySelector('select[data-select="changeCase"]');
+        if (changeCaseEl) {
+            changeCaseEl.addEventListener('change', (e) => {
+                if (this.isSourceMode) return;
+                this.changeCase(e.target.value);
+                changeCaseEl.value = ""; // Reset label
             });
         }
 
@@ -262,6 +360,12 @@ class SleekEditor {
                     e.preventDefault();
                     document.execCommand('superscript', false, null);
                     this._onContentChange();
+                } else if (key === 'h') {
+                    e.preventDefault();
+                    this._handleToolClick('openFindReplace');
+                } else if (key === 'p' && !e.shiftKey) {
+                    e.preventDefault();
+                    this._handleToolClick('printDocument');
                 }
             }
         });
@@ -326,6 +430,21 @@ class SleekEditor {
                 break;
             case 'insertDiagram':
                 this.insertDiagram();
+                break;
+            case 'insertHorizontalRule':
+                this.insertHorizontalRule();
+                break;
+            case 'openFindReplace':
+                this.openFindReplace();
+                break;
+            case 'insertDateTime':
+                this.insertDateTime();
+                break;
+            case 'insertSpecialCharacter':
+                this.insertSpecialCharacter();
+                break;
+            case 'printDocument':
+                this.printDocument();
                 break;
         }
     }
@@ -434,6 +553,7 @@ class SleekEditor {
             'justifyLeft': textAlign === 'left' || checkState('justifyLeft', false),
             'justifyCenter': textAlign === 'center' || checkState('justifyCenter', false),
             'justifyRight': textAlign === 'right' || checkState('justifyRight', false),
+            'justifyFull': textAlign === 'justify' || checkState('justifyFull', false),
             'insertBlockquote': isBlockquote,
             'insertCodeblock': isCodeblock,
             'insertAccordion': isAccordion,
@@ -877,6 +997,617 @@ class SleekEditor {
                 this._onContentChange();
             }
         });
+    }
+
+    /**
+     * Apply inline styling directly to selected HTML elements/ranges
+     */
+    applySelectionStyle(styleName, styleValue) {
+        const sel = window.getSelection();
+        if (!sel || !sel.rangeCount) return;
+        
+        if (sel.isCollapsed) {
+            // For collapsed selection (just cursor), insert an empty span and put cursor inside it
+            const range = sel.getRangeAt(0);
+            const span = document.createElement('span');
+            span.style[styleName] = styleValue;
+            span.innerHTML = '&#8203;'; // Zero-width space to keep selection
+            range.insertNode(span);
+            
+            // Move cursor inside
+            const newRange = document.createRange();
+            newRange.setStart(span.firstChild, 1);
+            newRange.setEnd(span.firstChild, 1);
+            sel.removeAllRanges();
+            sel.addRange(newRange);
+            this.editorArea.focus();
+            return;
+        }
+
+        const range = sel.getRangeAt(0);
+        const container = document.createElement('div');
+        container.appendChild(range.cloneContents());
+
+        const span = document.createElement('span');
+        span.style[styleName] = styleValue;
+        span.innerHTML = container.innerHTML;
+
+        this._restoreSelection();
+        document.execCommand('insertHTML', false, span.outerHTML);
+        this.editorArea.focus();
+        this._onContentChange();
+    }
+
+    /**
+     * Change case of selected text
+     */
+    changeCase(caseType) {
+        const sel = window.getSelection();
+        if (!sel || sel.isCollapsed || !sel.rangeCount) return;
+        
+        const range = sel.getRangeAt(0);
+        const container = document.createElement('div');
+        container.appendChild(range.cloneContents());
+        
+        const walker = document.createTreeWalker(
+            container,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        
+        let textContent = '';
+        const textNodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+            textNodes.push(node);
+            textContent += node.nodeValue;
+        }
+        
+        let newText = '';
+        if (caseType === 'lowercase') {
+            newText = textContent.toLowerCase();
+        } else if (caseType === 'uppercase') {
+            newText = textContent.toUpperCase();
+        } else if (caseType === 'capitalize') {
+            newText = textContent.replace(/\b\w/g, c => c.toUpperCase());
+        } else if (caseType === 'sentence') {
+            newText = textContent.toLowerCase().replace(/(^\s*|[.!?]\s+)([a-z])/g, (m, p1, p2) => p1 + p2.toUpperCase());
+        } else {
+            return;
+        }
+        
+        let offset = 0;
+        textNodes.forEach(tNode => {
+            const len = tNode.nodeValue.length;
+            tNode.nodeValue = newText.substring(offset, offset + len);
+            offset += len;
+        });
+        
+        this._restoreSelection();
+        document.execCommand('insertHTML', false, container.innerHTML);
+        this.editorArea.focus();
+        this._onContentChange();
+    }
+
+    /**
+     * Search helper to find matches of a string inside editor text content
+     */
+    findTextInEditor(searchText, matchCase = false) {
+        const textNodes = [];
+        let textContent = '';
+        const walker = document.createTreeWalker(
+            this.editorArea,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        
+        let node;
+        while (node = walker.nextNode()) {
+            textNodes.push({
+                node: node,
+                start: textContent.length,
+                end: textContent.length + node.nodeValue.length
+            });
+            textContent += node.nodeValue;
+        }
+        
+        const flags = matchCase ? 'g' : 'gi';
+        const escapedSearch = searchText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(escapedSearch, flags);
+        
+        const matches = [];
+        let match;
+        while ((match = regex.exec(textContent)) !== null) {
+            matches.push({
+                index: match.index,
+                text: match[0]
+            });
+        }
+        
+        return { textNodes, matches, textContent };
+    }
+
+    /**
+     * Select search match in the editor DOM
+     */
+    selectMatch(matchIndex, matchLength, textNodes) {
+        const startPos = matchIndex;
+        const endPos = matchIndex + matchLength;
+        
+        let startNode = null, startOffset = 0;
+        let endNode = null, endOffset = 0;
+        
+        for (const info of textNodes) {
+            if (startPos >= info.start && startPos <= info.end) {
+                startNode = info.node;
+                startOffset = startPos - info.start;
+            }
+            if (endPos >= info.start && endPos <= info.end) {
+                endNode = info.node;
+                endOffset = endPos - info.start;
+            }
+        }
+        
+        if (startNode && endNode) {
+            const range = document.createRange();
+            range.setStart(startNode, startOffset);
+            range.setEnd(endNode, endOffset);
+            
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+            
+            const parentEl = startNode.parentElement;
+            if (parentEl) {
+                parentEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            return range;
+        }
+        return null;
+    }
+
+    /**
+     * Replace all occurrences of a search text
+     */
+    replaceAll(searchText, replacementText, matchCase = false) {
+        const { textNodes, matches } = this.findTextInEditor(searchText, matchCase);
+        if (!matches || matches.length === 0) return 0;
+        
+        // Loop back-to-front to keep offsets valid
+        for (let i = matches.length - 1; i >= 0; i--) {
+            const match = matches[i];
+            const range = this.selectMatch(match.index, match.text.length, textNodes);
+            if (range) {
+                range.deleteContents();
+                const node = document.createTextNode(replacementText);
+                range.insertNode(node);
+            }
+        }
+        
+        this._onContentChange();
+        return matches.length;
+    }
+
+    /**
+     * Open Find and Replace dialog
+     */
+    openFindReplace() {
+        this._saveSelection();
+        
+        const overlay = document.createElement('div');
+        overlay.className = 'de-modal-overlay';
+        overlay.innerHTML = `
+            <div class="de-modal de-modal-find-replace">
+                <div class="de-modal-header">
+                    <h4 class="de-modal-title">Find and Replace</h4>
+                    <button class="de-modal-close" type="button">✕</button>
+                </div>
+                <div class="de-modal-body">
+                    <div class="de-modal-group">
+                        <label class="de-modal-label">Find what:</label>
+                        <input type="text" class="de-modal-input" id="de-find-text" placeholder="Enter text to find...">
+                    </div>
+                    <div class="de-modal-group">
+                        <label class="de-modal-label">Replace with:</label>
+                        <input type="text" class="de-modal-input" id="de-replace-text" placeholder="Enter replacement text...">
+                    </div>
+                    <div class="de-modal-group de-modal-checkbox-group">
+                        <input type="checkbox" id="de-find-case">
+                        <label for="de-find-case" class="de-modal-checkbox-label">Match case</label>
+                    </div>
+                    <div class="de-find-status" id="de-find-status-msg"></div>
+                </div>
+                <div class="de-modal-footer">
+                    <button class="de-btn de-btn-secondary" id="de-btn-find-next" type="button">Find Next</button>
+                    <button class="de-btn de-btn-secondary" id="de-btn-replace" type="button">Replace</button>
+                    <button class="de-btn de-btn-primary" id="de-btn-replace-all" type="button">Replace All</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+        setTimeout(() => overlay.classList.add('active'), 50);
+        
+        const findInput = overlay.querySelector('#de-find-text');
+        const replaceInput = overlay.querySelector('#de-replace-text');
+        const caseCheckbox = overlay.querySelector('#de-find-case');
+        const statusMsg = overlay.querySelector('#de-find-status-msg');
+        
+        const close = () => {
+            overlay.classList.remove('active');
+            setTimeout(() => overlay.remove(), 250);
+        };
+        
+        overlay.querySelector('.de-modal-close').onclick = close;
+        
+        const findNext = () => {
+            const searchText = findInput.value;
+            if (!searchText) {
+                statusMsg.innerText = 'Please enter search text.';
+                return;
+            }
+            
+            const matchCase = caseCheckbox.checked;
+            const searchData = this.findTextInEditor(searchText, matchCase);
+            
+            if (searchData.matches.length === 0) {
+                statusMsg.innerText = 'No matches found.';
+                return;
+            }
+            
+            // Find next match relative to current cursor position
+            let currentOffset = 0;
+            const sel = window.getSelection();
+            if (sel.rangeCount > 0) {
+                const range = sel.getRangeAt(0);
+                const walker = document.createTreeWalker(this.editorArea, NodeFilter.SHOW_TEXT, null, false);
+                let node;
+                let currentLength = 0;
+                let foundStart = -1;
+                while (node = walker.nextNode()) {
+                    if (node === range.startContainer) {
+                        foundStart = currentLength + range.startOffset;
+                        break;
+                    }
+                    currentLength += node.nodeValue.length;
+                }
+                if (foundStart !== -1) {
+                    currentOffset = foundStart;
+                }
+            }
+            
+            // Find first match that starts at or after current selection offset
+            let nextMatch = searchData.matches.find(m => m.index >= currentOffset);
+            if (!nextMatch && sel.rangeCount > 0) {
+                // If cursor is at or inside the current match, next search should skip it. Let's find after current end
+                const range = sel.getRangeAt(0);
+                const currentEnd = currentOffset + range.toString().length;
+                nextMatch = searchData.matches.find(m => m.index >= currentEnd);
+            }
+            
+            if (!nextMatch) {
+                nextMatch = searchData.matches[0];
+                statusMsg.innerText = `Search wrapped. Match 1 of ${searchData.matches.length}`;
+            } else {
+                const matchNum = searchData.matches.indexOf(nextMatch) + 1;
+                statusMsg.innerText = `Match ${matchNum} of ${searchData.matches.length}`;
+            }
+            
+            this.selectMatch(nextMatch.index, searchText.length, searchData.textNodes);
+        };
+        
+        const replace = () => {
+            const searchText = findInput.value;
+            const replacementText = replaceInput.value;
+            if (!searchText) {
+                statusMsg.innerText = 'Please enter search text.';
+                return;
+            }
+            
+            const sel = window.getSelection();
+            if (sel.rangeCount > 0) {
+                const range = sel.getRangeAt(0);
+                const selectedText = range.toString();
+                
+                const matchCase = caseCheckbox.checked;
+                const isMatch = matchCase 
+                    ? selectedText === searchText 
+                    : selectedText.toLowerCase() === searchText.toLowerCase();
+                    
+                if (isMatch) {
+                    range.deleteContents();
+                    const node = document.createTextNode(replacementText);
+                    range.insertNode(node);
+                    
+                    const newRange = document.createRange();
+                    newRange.setStartAfter(node);
+                    newRange.setEndAfter(node);
+                    sel.removeAllRanges();
+                    sel.addRange(newRange);
+                    
+                    statusMsg.innerText = 'Replaced matching text.';
+                    this._onContentChange();
+                    
+                    setTimeout(findNext, 200);
+                    return;
+                }
+            }
+            
+            findNext();
+        };
+        
+        const replaceAll = () => {
+            const searchText = findInput.value;
+            const replacementText = replaceInput.value;
+            if (!searchText) {
+                statusMsg.innerText = 'Please enter search text.';
+                return;
+            }
+            
+            const matchCase = caseCheckbox.checked;
+            const replacedCount = this.replaceAll(searchText, replacementText, matchCase);
+            statusMsg.innerText = `Replaced ${replacedCount} occurrences.`;
+        };
+        
+        overlay.querySelector('#de-btn-find-next').onclick = findNext;
+        overlay.querySelector('#de-btn-replace').onclick = replace;
+        overlay.querySelector('#de-btn-replace-all').onclick = replaceAll;
+        
+        findInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                findNext();
+            }
+        });
+        
+        setTimeout(() => findInput.focus(), 150);
+    }
+
+    /**
+     * Apply line spacing (line-height) to block elements intersecting selection
+     */
+    setLineSpacing(spacing) {
+        this._restoreSelection();
+        const sel = window.getSelection();
+        if (!sel || !sel.rangeCount) return;
+        
+        const range = sel.getRangeAt(0);
+        const blocks = new Set();
+        
+        const getBlockParent = (node) => {
+            let curr = node;
+            while (curr && curr !== this.editorArea) {
+                const tag = curr.tagName ? curr.tagName.toLowerCase() : '';
+                if (['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'blockquote', 'pre', 'td', 'th'].includes(tag)) {
+                    return curr;
+                }
+                curr = curr.parentNode;
+            }
+            return null;
+        };
+        
+        const startBlock = getBlockParent(range.startContainer);
+        if (startBlock) blocks.add(startBlock);
+        
+        const endBlock = getBlockParent(range.endContainer);
+        if (endBlock) blocks.add(endBlock);
+        
+        const walker = document.createTreeWalker(
+            this.editorArea,
+            NodeFilter.SHOW_ELEMENT,
+            null,
+            false
+        );
+        
+        let node;
+        let inRange = false;
+        while (node = walker.nextNode()) {
+            if (node === range.startContainer || node.contains(range.startContainer)) {
+                inRange = true;
+            }
+            if (inRange) {
+                const block = getBlockParent(node);
+                if (block) blocks.add(block);
+            }
+            if (node === range.endContainer || node.contains(range.endContainer)) {
+                break;
+            }
+        }
+        
+        if (blocks.size === 0) {
+            document.execCommand('formatBlock', false, 'p');
+            const newSel = window.getSelection();
+            if (newSel.rangeCount) {
+                const block = getBlockParent(newSel.getRangeAt(0).startContainer);
+                if (block) blocks.add(block);
+            }
+        }
+        
+        blocks.forEach(block => {
+            block.style.lineHeight = spacing;
+        });
+        
+        this.editorArea.focus();
+        this._onContentChange();
+    }
+
+    /**
+     * Insert custom styled divider rule
+     */
+    insertHorizontalRule() {
+        this._restoreSelection();
+        document.execCommand('insertHTML', false, '<hr class="diginix-hr"><p></p>');
+        this.editorArea.focus();
+        this._onContentChange();
+    }
+
+    /**
+     * Insert current date and time
+     */
+    insertDateTime() {
+        this._restoreSelection();
+        const now = new Date();
+        const formatted = now.toLocaleString(undefined, {
+            dateStyle: 'long',
+            timeStyle: 'medium'
+        });
+        document.execCommand('insertHTML', false, `<span>${formatted}</span>`);
+        this.editorArea.focus();
+        this._onContentChange();
+    }
+
+    /**
+     * Insert special character symbol picker
+     */
+    insertSpecialCharacter() {
+        this._saveSelection();
+        const categories = {
+            'Math': ['±', '×', '÷', '=', '≠', '<', '>', '≤', '≥', '√', 'π', '∞', '▲', '▼'],
+            'Currency': ['$', '€', '£', '¥', '¢', '₱', '₩', '₹', '¤'],
+            'Typography': ['«', '»', '—', '–', '¶', '§', '©', '®', '™', '°', '•', '†', '‡', '№'],
+            'Arrows': ['←', '↑', '→', '↓', '↔', '↕', '↖', '↗', '↘', '↙', '⇒', '⇔']
+        };
+        
+        const overlay = document.createElement('div');
+        overlay.className = 'de-modal-overlay';
+        
+        let tabsHtml = '';
+        let gridsHtml = '';
+        
+        Object.keys(categories).forEach((cat, index) => {
+            tabsHtml += `<button class="de-char-tab ${index === 0 ? 'active' : ''}" data-tab="${cat}">${cat}</button>`;
+            gridsHtml += `
+                <div class="de-char-grid ${index === 0 ? 'active' : ''}" id="de-char-grid-${cat}">
+                    ${categories[cat].map(char => `<button type="button" class="de-char-btn" data-char="${char}">${char}</button>`).join('')}
+                </div>
+            `;
+        });
+        
+        overlay.innerHTML = `
+            <div class="de-modal de-modal-char">
+                <div class="de-modal-header">
+                    <h4 class="de-modal-title">Insert Special Character</h4>
+                    <button class="de-modal-close" type="button">✕</button>
+                </div>
+                <div class="de-modal-body">
+                    <div class="de-char-tabs">
+                        ${tabsHtml}
+                    </div>
+                    <div class="de-char-grids-container">
+                        ${gridsHtml}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+        setTimeout(() => overlay.classList.add('active'), 50);
+        
+        const close = () => {
+            overlay.classList.remove('active');
+            setTimeout(() => overlay.remove(), 250);
+        };
+        
+        overlay.querySelector('.de-modal-close').onclick = close;
+        
+        overlay.querySelectorAll('.de-char-tab').forEach(tab => {
+            tab.onclick = () => {
+                overlay.querySelectorAll('.de-char-tab').forEach(t => t.classList.remove('active'));
+                overlay.querySelectorAll('.de-char-grid').forEach(g => g.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const targetCat = tab.getAttribute('data-tab');
+                overlay.querySelector(`#de-char-grid-${targetCat}`).classList.add('active');
+            };
+        });
+        
+        overlay.querySelectorAll('.de-char-btn').forEach(btn => {
+            btn.onclick = () => {
+                const char = btn.getAttribute('data-char');
+                this._restoreSelection();
+                document.execCommand('insertHTML', false, char);
+                this.editorArea.focus();
+                this._onContentChange();
+                close();
+            };
+        });
+    }
+
+    /**
+     * Print the document contents
+     */
+    printDocument() {
+        const printWindow = window.open('', '_blank', 'width=800,height=600');
+        if (!printWindow) return;
+        const content = this.getContent();
+        printWindow.document.write(`
+            <html>
+            <head>
+                <title>Print Document</title>
+                <style>
+                    body {
+                        font-family: system-ui, -apple-system, sans-serif;
+                        line-height: 1.6;
+                        padding: 40px;
+                        color: #000;
+                        background: #fff;
+                    }
+                    pre {
+                        background: #f4f4f5;
+                        border: 1px solid #e4e4e7;
+                        padding: 12px;
+                        border-radius: 4px;
+                        font-family: monospace;
+                    }
+                    blockquote {
+                        border-left: 4px solid #3ecf8e;
+                        padding-left: 16px;
+                        margin-left: 0;
+                        color: #666;
+                        font-style: italic;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 16px 0;
+                    }
+                    th, td {
+                        border: 1px solid #cbd5e1;
+                        padding: 8px 12px;
+                        text-align: left;
+                    }
+                    th {
+                        background: #f8fafc;
+                    }
+                    details.article-accordion {
+                        border: 1px solid #cbd5e1;
+                        border-radius: 8px;
+                        margin: 16px 0;
+                        padding: 12px;
+                    }
+                    summary {
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                    .faq-delete-btn {
+                        display: none !important;
+                    }
+                </style>
+            </head>
+            <body>
+                ${content}
+                <script>
+                    window.onload = function() {
+                        window.print();
+                        window.close();
+                    }
+                <\/script>
+            </body>
+            </html>
+        `);
+        printWindow.document.close();
     }
 
     /**
